@@ -1,5 +1,37 @@
 # Changelog
 
+## [0.1.43](https://github.com/caroger/openinference/compare/python-openinference-instrumentation-langchain-v0.1.42...python-openinference-instrumentation-langchain-v0.1.43) (2025-05-12)
+
+
+### Features
+
+* Add `get_chain_root_span` utility for langchain instrumentation ([#1054](https://github.com/caroger/openinference/issues/1054)) ([4337aa1](https://github.com/caroger/openinference/commit/4337aa1674476958bdfcdd3725b0145c37268425))
+* add entrypoint for use in opentelemetry-instrument ([#1278](https://github.com/caroger/openinference/issues/1278)) ([2106acf](https://github.com/caroger/openinference/commit/2106acfd6648804abe9b95e41a49df26a500435c))
+* add toggle to separate trace from runtime context ([#1464](https://github.com/caroger/openinference/issues/1464)) ([0865a69](https://github.com/caroger/openinference/commit/0865a69904119676703e5ca26600458dd9fb60f2))
+* define openinference_instrumentor entry points for all libraries ([#1290](https://github.com/caroger/openinference/issues/1290)) ([4b69fdc](https://github.com/caroger/openinference/commit/4b69fdc13210048009e51639b01e7c0c9550c9d1))
+* **langchainpy:** capture reasoning, cache, and audio tokens  ([#1480](https://github.com/caroger/openinference/issues/1480)) ([22d962b](https://github.com/caroger/openinference/commit/22d962b7c07b5293cde02209b6702b77cd8fc0f3))
+* support langchain 0.3 ([#1045](https://github.com/caroger/openinference/issues/1045)) ([ff43e9d](https://github.com/caroger/openinference/commit/ff43e9ddc0a5f683f80d09139247ad194d6c29af))
+
+
+### Bug Fixes
+
+* Fix missing token counts when using VertexAI with Langchain Instrumentor ([#1234](https://github.com/caroger/openinference/issues/1234)) ([e387573](https://github.com/caroger/openinference/commit/e387573a031bdb40a78c2fe92713f132348865f7))
+* handle missing attribute if .instrument() has not been called and tracer has not been initialized ([#1340](https://github.com/caroger/openinference/issues/1340)) ([2582513](https://github.com/caroger/openinference/commit/2582513ef60dc510fc3f63930b9717edfe07b9a2))
+* increase version lower bound for openinference-instrumentation ([#1012](https://github.com/caroger/openinference/issues/1012)) ([3236d27](https://github.com/caroger/openinference/commit/3236d2733a46b84d693ddb7092209800cde8cc34))
+* increased minimum supported version of openinference-instrumentation to 0.1.27 ([#1507](https://github.com/caroger/openinference/issues/1507)) ([a55edfa](https://github.com/caroger/openinference/commit/a55edfa8900c1f36a73385c7d03f91cffadd85c4))
+* **langchain:** don't treat langgraph agent commands as exceptions ([#1389](https://github.com/caroger/openinference/issues/1389)) ([af48af3](https://github.com/caroger/openinference/commit/af48af39afb002d63e78d77b2d0ec543442410e1))
+* merge metadata ([#1497](https://github.com/caroger/openinference/issues/1497)) ([793101a](https://github.com/caroger/openinference/commit/793101a74570c0a4611c751ef518879486fdf852))
+* message content when it's list of strings ([#1337](https://github.com/caroger/openinference/issues/1337)) ([d79f90e](https://github.com/caroger/openinference/commit/d79f90e8949da449bc0beef0f6ece75077d57e89))
+* support python 3.13 and drop python 3.8 ([#1263](https://github.com/caroger/openinference/issues/1263)) ([5bfaa90](https://github.com/caroger/openinference/commit/5bfaa90d800a8f725b3ac7444d16972ed7821738))
+* tuple message type ([#1488](https://github.com/caroger/openinference/issues/1488)) ([6b65b65](https://github.com/caroger/openinference/commit/6b65b656627d7910a82a0c14c70c916b0b454a3b))
+* update lower bound on openinference-semantic-conventions ([#1567](https://github.com/caroger/openinference/issues/1567)) ([c2f428c](https://github.com/caroger/openinference/commit/c2f428c5916c3dd62cf6670358f37111d4f7fd25))
+
+
+### Documentation
+
+* fix license to be openinference ([#1353](https://github.com/caroger/openinference/issues/1353)) ([85d435b](https://github.com/caroger/openinference/commit/85d435be3af3de5424494cfbdd654454688b7377))
+* TraceConfig and context attributes ([#793](https://github.com/caroger/openinference/issues/793)) ([d3808c4](https://github.com/caroger/openinference/commit/d3808c4bea3f6a4c72d3a7ea09b54e78072be6fd))
+
 ## [0.1.42](https://github.com/Arize-ai/openinference/compare/python-openinference-instrumentation-langchain-v0.1.41...python-openinference-instrumentation-langchain-v0.1.42) (2025-04-28)
 
 

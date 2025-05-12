@@ -1,5 +1,49 @@
 # Changelog
 
+## [5.0.0](https://github.com/caroger/openinference/compare/python-openinference-instrumentation-llama-index-v4.2.1...python-openinference-instrumentation-llama-index-v5.0.0) (2025-05-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* support chat message content blocks for llama-index >= 0.12.3 ([#1446](https://github.com/caroger/openinference/issues/1446))
+* support pydanticV2 for llama-index 0.11 ([#971](https://github.com/caroger/openinference/issues/971))
+
+### Features
+
+* add entrypoint for use in opentelemetry-instrument ([#1278](https://github.com/caroger/openinference/issues/1278)) ([2106acf](https://github.com/caroger/openinference/commit/2106acfd6648804abe9b95e41a49df26a500435c))
+* add get_current_span helper function for llama-index ([#1165](https://github.com/caroger/openinference/issues/1165)) ([b46931c](https://github.com/caroger/openinference/commit/b46931c7cec73f73873a3ae15003f3c6c52173e1))
+* add toggle to separate trace from runtime context ([#1464](https://github.com/caroger/openinference/issues/1464)) ([0865a69](https://github.com/caroger/openinference/commit/0865a69904119676703e5ca26600458dd9fb60f2))
+* define openinference_instrumentor entry points for all libraries ([#1290](https://github.com/caroger/openinference/issues/1290)) ([4b69fdc](https://github.com/caroger/openinference/commit/4b69fdc13210048009e51639b01e7c0c9550c9d1))
+* **llama-index py:** capture reasoning, cache, and audio tokens ([#1489](https://github.com/caroger/openinference/issues/1489)) ([9d0ec39](https://github.com/caroger/openinference/commit/9d0ec3991a6adf7932b0b2069f38a6e83bb1b752))
+* support chat message content blocks for llama-index &gt;= 0.12.3 ([#1446](https://github.com/caroger/openinference/issues/1446)) ([291dc0a](https://github.com/caroger/openinference/commit/291dc0a8d071f6b3a25b5b5cd8a5fe2d756a3cda))
+* support pydanticV2 for llama-index 0.11 ([#971](https://github.com/caroger/openinference/issues/971)) ([ba203b8](https://github.com/caroger/openinference/commit/ba203b8bb16c73113c273516d0a4bf7b0d553bf1))
+
+
+### Bug Fixes
+
+* capture tools from chat kwargs ([#1509](https://github.com/caroger/openinference/issues/1509)) ([2083836](https://github.com/caroger/openinference/commit/2083836872dd9b3f4c40bcf66a2c3054f30aa59a))
+* Don't check length when converting ToolMetadata to OpenAI format ([#1004](https://github.com/caroger/openinference/issues/1004)) ([47e9c77](https://github.com/caroger/openinference/commit/47e9c779c9ccc464faa30c2ad3637028cfe6cc80))
+* get_current_span should return None when llama-index is not instrumented ([#1169](https://github.com/caroger/openinference/issues/1169)) ([12d64bc](https://github.com/caroger/openinference/commit/12d64bc489bc1530458f10e815f771ac8a42fd02))
+* handle multiple embedding events for llama-index ([#1166](https://github.com/caroger/openinference/issues/1166)) ([0cef233](https://github.com/caroger/openinference/commit/0cef233aa3ad60a17bbc28e4c80d1d1bb859f360))
+* increase version lower bound for openinference-instrumentation ([#1012](https://github.com/caroger/openinference/issues/1012)) ([3236d27](https://github.com/caroger/openinference/commit/3236d2733a46b84d693ddb7092209800cde8cc34))
+* increased minimum supported version of openinference-instrumentation to 0.1.27 ([#1507](https://github.com/caroger/openinference/issues/1507)) ([a55edfa](https://github.com/caroger/openinference/commit/a55edfa8900c1f36a73385c7d03f91cffadd85c4))
+* **llama-index:** Adjust newspan args in BaseHandler ([#773](https://github.com/caroger/openinference/issues/773)) ([ab216d1](https://github.com/caroger/openinference/commit/ab216d1fe4cf6ba8cf5461a98c4fc65be6a762de))
+* **llama-index:** Capture tool call id from additional_kwargs ([#1299](https://github.com/caroger/openinference/issues/1299)) ([14c1c0c](https://github.com/caroger/openinference/commit/14c1c0c8f206a00f6cf67a9c1995c24283687f37))
+* **llama-index:** capture tool calls from anthropic chat response ([#1177](https://github.com/caroger/openinference/issues/1177)) ([e1ba6a5](https://github.com/caroger/openinference/commit/e1ba6a5dcfc7f6b43cbe40d62e7bff55d45a3f12))
+* **llama-index:** coerce token counts to be integers ([#1183](https://github.com/caroger/openinference/issues/1183)) ([3af6ca6](https://github.com/caroger/openinference/commit/3af6ca626c8f37c931eb51b846b0b3d24afdb615))
+* **llama-index:** ensure llamaindex response models are serializable ([#997](https://github.com/caroger/openinference/issues/997)) ([c1cb203](https://github.com/caroger/openinference/commit/c1cb203f1230d9aa3557736deb7b7f6fe310acca))
+* **llama-index:** extract token counts for groq when streaming ([#1174](https://github.com/caroger/openinference/issues/1174)) ([0aafe9c](https://github.com/caroger/openinference/commit/0aafe9c78a4455ab2612a34a5c648e1362c338cc))
+* **llama-index:** fix typo in llama-index entry point ([#1288](https://github.com/caroger/openinference/issues/1288)) ([15f3b59](https://github.com/caroger/openinference/commit/15f3b5949121ce9c71f5f41d098858e492d4f5dd))
+* remove attaching and detaching of opentelemetry contexts ([#1112](https://github.com/caroger/openinference/issues/1112)) ([0f16ffb](https://github.com/caroger/openinference/commit/0f16ffbebb00bb80345fafe03919bb3a5b17d2ae))
+* replace logger.exception() with repr() ([#1385](https://github.com/caroger/openinference/issues/1385)) ([3b924da](https://github.com/caroger/openinference/commit/3b924da0b823e23c9170a6dae682bb0488c884cb))
+* support python 3.13 and drop python 3.8 ([#1263](https://github.com/caroger/openinference/issues/1263)) ([5bfaa90](https://github.com/caroger/openinference/commit/5bfaa90d800a8f725b3ac7444d16972ed7821738))
+
+
+### Documentation
+
+* fix license to be openinference ([#1353](https://github.com/caroger/openinference/issues/1353)) ([85d435b](https://github.com/caroger/openinference/commit/85d435be3af3de5424494cfbdd654454688b7377))
+* TraceConfig and context attributes ([#793](https://github.com/caroger/openinference/issues/793)) ([d3808c4](https://github.com/caroger/openinference/commit/d3808c4bea3f6a4c72d3a7ea09b54e78072be6fd))
+
 ## [4.2.1](https://github.com/Arize-ai/openinference/compare/python-openinference-instrumentation-llama-index-v4.2.0...python-openinference-instrumentation-llama-index-v4.2.1) (2025-04-11)
 
 

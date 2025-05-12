@@ -1,5 +1,28 @@
 # Changelog
 
+## [0.1.12](https://github.com/caroger/openinference/compare/python-openinference-instrumentation-openai-agents-v0.1.11...python-openinference-instrumentation-openai-agents-v0.1.12) (2025-05-12)
+
+
+### Features
+
+* cached and reasoning tokens from response api ([#1461](https://github.com/caroger/openinference/issues/1461)) ([a9f257c](https://github.com/caroger/openinference/commit/a9f257c1dee46eb18ed32f463bdc50cc7cab60fe))
+* capture result from MCPListToolsSpanData ([#1458](https://github.com/caroger/openinference/issues/1458)) ([66abe50](https://github.com/caroger/openinference/commit/66abe50f187a45ce11fb64f3399b52a3139fe115))
+* openai-agents instrumentation ([#1350](https://github.com/caroger/openinference/issues/1350)) ([9afbad3](https://github.com/caroger/openinference/commit/9afbad3100d68601a2f9265fe20985a34f80e04b))
+
+
+### Bug Fixes
+
+* add span attributes for FunctionSpanData ([#1408](https://github.com/caroger/openinference/issues/1408)) ([48d1a35](https://github.com/caroger/openinference/commit/48d1a3549eb8dda55e941cab867d9581a96fdf33))
+* attach span to otel context on span start ([#1373](https://github.com/caroger/openinference/issues/1373)) ([b44809f](https://github.com/caroger/openinference/commit/b44809f1c460dd3a9bee4a9b068e6c275fecf9b4))
+* classify handoff span as tool span ([#1374](https://github.com/caroger/openinference/issues/1374)) ([e75a444](https://github.com/caroger/openinference/commit/e75a444d766d900ec3bc78b9d257453fb0e586d1))
+* get attributes from GenerationSpanData (i.e. chat completions api) ([#1426](https://github.com/caroger/openinference/issues/1426)) ([c0f238d](https://github.com/caroger/openinference/commit/c0f238d36f18bdec0062e84ca4e53a66c63508e0))
+* handle error: invalid type dict in attribute 'output.value' value sequence ([#1443](https://github.com/caroger/openinference/issues/1443)) ([34bacfd](https://github.com/caroger/openinference/commit/34bacfd9369dfb098e931cf20982b286fcb7fbea))
+* increased minimum supported version of openinference-instrumentation to 0.1.27 ([#1507](https://github.com/caroger/openinference/issues/1507)) ([a55edfa](https://github.com/caroger/openinference/commit/a55edfa8900c1f36a73385c7d03f91cffadd85c4))
+* openai agent with int tool return ([#1419](https://github.com/caroger/openinference/issues/1419)) ([1bb75a9](https://github.com/caroger/openinference/commit/1bb75a94999bbe8615cdc7a5490fb2668833742f))
+* **openai_agents:** Set status `on_span_end`. ([#1556](https://github.com/caroger/openinference/issues/1556)) ([2b53efa](https://github.com/caroger/openinference/commit/2b53efa491d81ab5852387f5a4d2e87972262616))
+* ruff formating fix & bump ruff version in dev requirements ([#1600](https://github.com/caroger/openinference/issues/1600)) ([076bb79](https://github.com/caroger/openinference/commit/076bb7966d44fccdb2ab94e6f379ef4ae22c39b1))
+* update lower bound on openinference-semantic-conventions ([#1567](https://github.com/caroger/openinference/issues/1567)) ([c2f428c](https://github.com/caroger/openinference/commit/c2f428c5916c3dd62cf6670358f37111d4f7fd25))
+
 ## [0.1.11](https://github.com/Arize-ai/openinference/compare/python-openinference-instrumentation-openai-agents-v0.1.10...python-openinference-instrumentation-openai-agents-v0.1.11) (2025-05-11)
 
 

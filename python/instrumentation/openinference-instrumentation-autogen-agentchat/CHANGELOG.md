@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/caroger/openinference/compare/python-openinference-instrumentation-autogen-agentchat-v0.1.0...python-openinference-instrumentation-autogen-agentchat-v0.1.1) (2025-05-28)
+
+
+### Features
+
+* **autogen-agentchat:** auto instrumentation ([#1611](https://github.com/caroger/openinference/issues/1611)) ([3c5857c](https://github.com/caroger/openinference/commit/3c5857c2864c3b367888683d1fd470ec631c389f))
+
 ## 0.1.0 (2025-05-21)
 
 
